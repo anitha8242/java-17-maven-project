@@ -29,4 +29,5 @@ jobs:
     - uses: actions/checkout@v3
     - name: Build the Docker image
       run: docker build -t java-image . --file Dockerfile
+      run: docker run -dt --name cont java-image
 
